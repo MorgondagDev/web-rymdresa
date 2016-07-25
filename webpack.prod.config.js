@@ -7,7 +7,7 @@ const reactRenderPlugin = require('react-render-webpack-plugin');
 module.exports = {
   entry: [
     './src/index.jsx',
-    './src/style.styl'
+    './src/style/style.styl'
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']

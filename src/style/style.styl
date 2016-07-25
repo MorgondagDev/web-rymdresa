@@ -1,0 +1,54 @@
+vendor-prefixes ?= webkit moz ms official
+@import 'nib'
+global-reset();
+
+c1 = #330333 // purple
+c2 = #ffe6a5 // yellow
+c3 = #94b8ab // green
+c4 = #507d8f // blue
+c5 = #2a2933 // black
+c6 = #f4f4f3 // white
+c7 = #373450 // purple2
+
+body
+	background-color: blue;
+
+@import animations
+@import scrollbar
+
+@import base
+@import header
+@import footer
+
+@import video
+@import press
+@import signup
+@import chapters
+@import features
+@import tooltip
+@import pilot
+@import gallery
+@import credits
+@import news
+@import soundtrack
+@import livefeed
+@import nominations
+@import presskit
+@import responsive
+@import splash-words
+
+
+@media (max-width: 414px)
+	section
+		width 90%
+		padding: 10px 10px;
+	.develop
+		margin-top: 0px;
+	.pixelart
+		width 100%
+		ul
+			width 100%
+			max-width initial
+		li
+			width 100%
+

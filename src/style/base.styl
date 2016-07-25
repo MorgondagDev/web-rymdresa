@@ -1,0 +1,203 @@
+.clear
+    clearfix()
+
+*
+    box-sizing: border-box;
+
+html
+    overflow-y scroll
+    height 100%
+
+@font-face {
+    font-family: '04b03regular';
+    src: url('../fonts/04b_03__0-webfont.eot');
+    src: url('../fonts/04b_03__0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/04b_03__0-webfont.woff') format('woff'),
+         url('../fonts/04b_03__0-webfont.ttf') format('truetype'),
+         url('../fonts/04b_03__0-webfont.svg#04b03regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+	font-family: '04b03regular';
+	font-size: 16px;
+	text-align: center;
+	background: c5 url(../img/bg.png);
+	color:c6
+	margin 0 1em
+
+body.travel
+	animation scroll 2s linear infinite
+
+a#travel
+	position fixed
+	top 0
+	left 0
+	padding 1em
+	color c4
+	opacity 0.5
+	cursor pointer
+	font-size 8px
+	&:hover
+		opacity 1
+
+a#travel.active
+	opacity 1
+	color c2
+
+
+.maintext
+	line-height 22px
+	margin 0 0 2em 0
+
+.maintext2
+	line-height 22px
+	margin 0 0 2em 0
+	text-align right
+
+.no-touch body.scroll
+	//animation: scroll infinite linear 20s
+
+a,a:visited
+	text-decoration: none;
+	color:c2;
+	transition color linear 250ms
+	&:hover
+		color c4
+#main
+	max-width: 1050px
+	margin 0 auto
+	padding 0px 0 0 0
+
+article#info, article#platform, article#signup, article#soundtrack,article#chapters,article#pilot
+	box-shadow:0 0 0 1px black,0 0 0 5px #373450,0 0 0 6px black
+	background c5
+
+article#signup
+	padding 1em 0
+	margin 0 0 2em 0
+
+#features
+	width 100%
+	margin 0em 0
+	box-shadow:0 0 0 1px black,0 0 0 5px #373450,0 0 0 6px black
+	background c5
+	position: relative;
+	z-index: 5;
+
+#left, #right
+	float:left
+	width 50%;
+	text-align left
+
+#left
+	padding 0em 0 0em 2em
+	margin: 390px 0 0 0;
+	font-size 16px
+	line-height 22px
+	min-width: 450px
+
+#left2
+	padding 2em 3em 3em 3em
+	min-width: 450px
+	float: left;
+	width: 50%;
+	text-align: left;
+
+#right
+	padding 2em 3em 0 0
+
+
+h1,h2,h3,h4,h5
+	-webkit-user-select: initial;
+
+h1
+	font-size 32px
+	line-height 38px
+	margin 0 0 1em 0
+	color c2
+
+h2
+	font-size 24px
+	line-height 30px
+	margin 1em 0 0.5em 0
+	color c2
+
+#glow
+	position: absolute
+	z-index: 1;
+	max-width 440px
+	margin: 2em 0 0 0;
+	img
+		display block
+		height auto
+		margin: -1em auto 0 auto;
+		animation rotate 50s linear infinite
+
+#facebook
+	margin: 2em 0 0 0;
+
+#social
+	margin 0 0 5em 0
+	li
+		display inline-block
+		margin 0 1em
+		a
+			color c6
+
+#help-us {
+	margin: 1em 0;
+}
+
+::selection
+	color c3
+	background c4
+::-moz-selection
+	color c3
+	background c4
+
+article.general
+	padding 2em 4em
+	text-align left
+	width 100%
+	margin 2em 0 2em 0
+	box-shadow:0 0 0 1px black,0 0 0 5px #373450,0 0 0 6px black
+	background c5
+	position: relative;
+	z-index: 5;
+
+article.general h2
+	margin 0
+	display inline-block
+	transition all linear 150ms
+
+
+article.general a
+	text-decoration none
+	&:hover
+		h2
+			color c4
+
+.btn
+	box-shadow: 0 0 0 1px #000,0 0 0 3px #373450,0 0 0 4px #000;
+	margin: 25px 32px 0 5px;
+	padding: 7px 20px;
+	line-height: 20px;
+	display: inline-block;
+	text-align: center;
+	transition all linear 90ms
+	color #ffe6a5 !important
+	text-transform uppercase
+	z-index 20
+	&:hover
+		box-shadow: 0 0 0 1px #000,0 0 0 3px #373450,0 0 0 4px #000;
+		color white !important
+		background #330333 !important
+
+.white
+	color white !important
+
+.steam
+	margin: 4em auto;
+	max-width 646px;

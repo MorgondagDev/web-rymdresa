@@ -1,0 +1,33 @@
+#gallery
+	width 100%
+	margin 4em 0 0 0
+	box-shadow:0 0 0 1px black,0 0 0 5px #373450,0 0 0 6px black
+	background c5
+	padding 2em
+
+
+#slideshow-container
+	height 380px
+	width:884px
+	overflow hidden
+	box-shadow:0 0 0 1px black,0 0 0 5px #373450,0 0 0 6px black
+	margin 0 auto
+
+ul#slideshow.animate
+	transition all ease-in-out 450ms
+
+ul#slideshow
+	height 380px
+	width:884*7px
+	background c1
+	display block
+
+	li
+		user-select none
+		opacity: 1
+		height 380px
+		width:884px
+		float:left
+		transition all linear 250ms
+		&:hover,&:focus
+			opacity 0.75;
