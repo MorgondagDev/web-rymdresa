@@ -1,6 +1,7 @@
 const webpack = require('webpack')
 const nib = require('nib')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const PORT = process.env.port || 8080
 console.log('http://localhost:' + PORT)
@@ -54,6 +55,11 @@ module.exports = {
     configFile: './.eslintrc'
   },
   plugins: [
+    new CopyWebpackPlugin([{
+      from: 'src/media',
+      to: 'media',
+      force: true
+    }]),
     new webpack.ProvidePlugin({
       'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
     }),

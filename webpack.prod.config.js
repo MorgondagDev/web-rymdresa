@@ -1,6 +1,8 @@
-var webpack = require('webpack');
-var nib = require('nib');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const nib = require('nib');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const reactRenderPlugin = require('react-render-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -39,6 +41,11 @@ module.exports = {
     new webpack.ProvidePlugin({
       'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
     }),
+    new CopyWebpackPlugin([{
+      from: 'src/media',
+      to: 'media',
+      force: true
+    }]),
     new ExtractTextPlugin('style.min.css'),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
@@ -50,6 +57,10 @@ module.exports = {
       'process.env': {
         'NODE_ENV': '"production"'
       }
+    }),
+    new reactRenderPlugin({
+      'file': 'src/app.jsx',
+      'parentClass': 'react-app'
     })
   ]
 };
