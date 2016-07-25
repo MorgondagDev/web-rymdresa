@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const nib = require('nib');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const reactRenderPlugin = require('react-render-webpack-plugin');
 
 module.exports = {
@@ -28,9 +27,12 @@ module.exports = {
     }, {
       test: /.*\.(gif|png|jpe?g|svg|ico)$/i,
       loaders: [
-        'file?hash=sha512&digest=hex&name=[hash].[ext]',
+        'file?name=img/[name].[ext]',
         'image-webpack?{progressive:true, optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}}'
       ]
+    }, {
+      test: /\.(eot|ttf|woff|woff2)$/,
+      loader: 'file?name=fonts/[name].[ext]'
     }]
   },
 
@@ -41,11 +43,6 @@ module.exports = {
     new webpack.ProvidePlugin({
       'fetch': 'imports?this=>global!exports?global.fetch!whatwg-fetch'
     }),
-    new CopyWebpackPlugin([{
-      from: 'src/media',
-      to: 'media',
-      force: true
-    }]),
     new ExtractTextPlugin('style.min.css'),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin({
