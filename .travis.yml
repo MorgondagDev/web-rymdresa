@@ -5,7 +5,6 @@ node_js:
 before_script:
 - npm i
 script:
-- npm test
 - npm run build
 cache:
   bundler: true
@@ -16,7 +15,7 @@ before_deploy:
   - ~/.local/bin/aws configure set preview.cloudfront true
 deploy:
   provider: script
-  script: ~/.local/bin/aws s3 sync dist $BUCKET $REGION --delete
+  script: ~/.local/bin/aws s3 sync dist/public $BUCKET $REGION --delete
   skip_cleanup: true
   on:
     branch: master

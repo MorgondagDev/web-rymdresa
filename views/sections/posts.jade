@@ -1,0 +1,20 @@
+section#main
+	article#info
+		article#news
+
+			if single
+				if post
+					h1 #{post.title}
+					article.archived
+						span.date #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+						!{post.content}
+					.share
+						<a href="http://twitter.com/share?text=#{post.title}&url=http://rymdresa.com/news/#{post.slug}&via=rymdresa&hashtags=rymdresa" title="Share on Twitter" rel="nofollow" target="_blank">Tweet This</a>
+			else
+				h1 RymdResa News Archive:
+				- each post in posts
+					article.archived
+						a(href="./news/#{post.slug}")
+							h2 #{post.title}
+						span.date #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+						!{post.content}

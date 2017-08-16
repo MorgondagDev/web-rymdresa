@@ -1,0 +1,86 @@
+article#news
+	padding 2em 4em
+	text-align left
+	width 100%
+	margin 3em 0 3em 0
+	box-shadow:0 0 0 1px black,0 0 0 5px #373450,0 0 0 6px black
+	background c5
+	position: relative;
+	z-index: 7;
+
+article#news h2
+	margin 0
+	display inline-block
+	transition all linear 150ms
+article#news article
+	position relative;
+	margin 0 0 1em 0
+	padding 0 3em 1em 80px
+	border-bottom: 2px c4 solid;
+	background-repeat no-repeat;
+	background-position: left center
+
+article#news article a
+	text-decoration none
+	&:hover
+		h2
+			color c4
+
+article#news .mine-link
+	position: absolute;
+	width: 74px;
+	height: 100%;
+	left: 0;
+
+article#news article#nr1
+	background-image url(../img/min1.png)
+
+article#news article#nr2
+	background-image url(../img/min2.png)
+
+article#news article#nr3
+	background-image url(../img/min3.png)
+article.archived
+	background-image url(../img/smallmine.png)
+	padding: 0 3em 1em 60px !important;
+.old-news
+	padding-left 60px
+	background url(../img/smallmine.png) center left no-repeat
+
+	li
+		display inline-block
+		padding 1em 0.5em
+		color c4
+		.data
+			display none
+			position absolute
+			width 500px
+			height auto
+			padding 1em
+			box-shadow:0 0 0 1px black,0 0 0 5px #373450,0 0 0 6px black
+			background c5
+			z-index 999
+			margin -4em 0 0 -250px
+			left 50%
+
+	li:hover
+		.data
+			display block
+
+
+	a#no-one-will-click-this-ever
+
+		display: inline-block;
+
+		padding 1em 0.5em
+
+article#news span
+	color c3
+	line-height: 21px;
+	display: table
+article#news p
+	line-height: 22px;
+	margin-bottom: 1em
+	display: table
+	color white;
+

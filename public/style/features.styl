@@ -1,0 +1,53 @@
+article#features, article#platform
+	ul
+		width 100%
+		padding 1em 1em
+		text-align center
+	li
+		color c2
+		width 20%;
+		display inline-block
+		text-align center
+		padding 1em 0
+		border solid 1px c5
+		transition all linear 250ms
+		&:hover, &:focus
+			color c3
+			border solid 1px rgba(0,0,0,0.2)
+
+			.tooltip
+				display block
+
+.icons
+	width: 48px;
+	height 48px;
+	background-position center center;
+	background-repeat: no-repeat;
+	margin 0 auto 1em auto
+#icon1
+	background-image url('../../img/icon_sprite.png')
+
+for num in (1..15)
+	#icon{num}
+		background-image url('../../img/icon_sprite.png')
+		background-position-y 0px
+		background-position-x unit(-48*num,'px')
+
+article#platform
+	margin 0 0 4em 0;
+
+.title
+	display block
+	padding: 1em;
+	color c2
+
+#astroid
+	background-image: url("../../img/astroid.png");
+	width: 232px;
+	height: 243px;
+	position: absolute;
+	float: right;
+	margin: -315px -60px 0 0;
+	position: relative;
+	z-index: 5;
+	animation rotate 50s linear infinite

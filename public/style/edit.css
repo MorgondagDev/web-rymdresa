@@ -1,0 +1,5 @@
+body{margin-top:4em;font-family:helvetica;font-size:18px;line-height:24px}
+.content-edit{max-width:960px;margin:2em auto;padding:4em;text-align:left;background:#283f48;font-size:18px}
+code{display:block}
+ul li{font-size:20px;font-weight:bold;border-bottom:solid 2px #330333;padding:1em;}
+ul li span{display:inline-block;width:200px}

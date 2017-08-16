@@ -1,0 +1,61 @@
+article#pilot
+	h1 Pilot Level
+	#xp
+		span#lvl Level 5
+		span#bar
+
+	ul#pilot-skills
+		li.skillpoints
+			span.count 35
+			span skillpoints left
+		li(data-id="0")
+			.count 0
+			.skill-icon +
+			.skill-info
+				.skill-title Exploration
+				.skill-desc Increase the outcome from quests.
+			.clear
+		li(data-id="1")
+			.count 0
+			.skill-icon +
+			.skill-info
+				.skill-title Scouring
+				.skill-desc Increase chances of finding items.
+			.clear
+		li(data-id="2")
+			.count 0
+			.skill-icon +
+			.skill-info
+				.skill-title Technology
+				.skill-desc Increase ancient technology experties
+			.clear
+		li(data-id="3")
+			.count 0
+			.skill-icon +
+			.skill-info
+				.skill-title Survival
+				.skill-desc Increase resources and consumable items
+			.clear
+		a#reset-skills reset
+	#pilot-stats
+
+		p <span class="skillup-count">+<span class="skillup" data-per="0.5" data-target="1">0.00</span>% </span><span class="skillup-title">extra spacepoints from quest</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.2" data-target="1">0.00</span>% </span><span class="skillup-title">extra resources from quest</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.1" data-target="1">0.00</span>% </span><span class="skillup-title">to exploration success rate</span>
+		p <span class="skillup-count">-<span class="skillup" data-per="0.5" data-target="1">0.00</span>% </span><span class="skillup-title">spacepoints lose rate from quest</span>
+		p <span class="skillup-count">-<span class="skillup" data-per="0.5" data-target="1">0.00</span>% </span><span class="skillup-title">resource lose rate from quest</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.6" data-target="2">0.00</span>% </span><span class="skillup-title">item finding</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.2" data-target="2">0.00</span>% </span><span class="skillup-title">higher ranked items</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.06" data-target="2">0.00</span>% </span><span class="skillup-title">change of extra item</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.05" data-target="3">0.00</span>% </span><span class="skillup-title">ship acceleration</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.05" data-target="3">0.00</span> </span><span class="skillup-title">supply-station charges</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.2" data-target="3">0.00</span>% </span><span class="skillup-title">shield revovery rate</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.05" data-target="3">0.00</span> </span><span class="skillup-title">items from shops</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="1" data-target="3">0.00</span> </span><span class="skillup-title">ancient techs requirments</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="3.5" data-target="4">0.00</span> </span><span class="skillup-title">resources</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.4" data-target="4">0.00</span>% </span><span class="skillup-title">consumable items effect</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.08" data-target="4">0.00</span>%</span><span class="skillup-title">max resources</span>
+		p <span class="skillup-count">-<span class="skillup" data-per="0.1" data-target="4">0.00</span>% </span><span class="skillup-title">resources lost per year</span>
+		p <span class="skillup-count">+<span class="skillup" data-per="0.1" data-target="4">0.00</span>% </span><span class="skillup-title">damage reduction from impact</span>
+
+	.clear

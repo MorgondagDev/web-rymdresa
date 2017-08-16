@@ -1,0 +1,56 @@
+section#main
+	article#info
+		include video
+
+		aside#left
+			include splashwords
+		aside#right
+			.maintext
+				h1 A poetic, roguelike space odyssey in a procedurally generated world
+
+				p When home is no more...
+				p
+					br
+				p Resources are sparse. The world is infinitive and unknown. The universe is lonely, open and unforgiving.
+				p
+					br
+				p You're drifting, in a big, empty and silent space. Searching for a new home. You know a few coordinates to some random locations; but this is the only information you got.
+				p
+					br
+				p RymdResa is a challenging and evolving space adventure, based on randomness, with some RPG elements. Abstract poetry and art are expressed throughout a lonesome and calm journey in space.
+				p
+					br
+				p Travel through a mysterious cosmos, deep and beyond. Discover the solitude of space! Customize your ship, explore and survive in the retro stylized world of RymdResa.
+		.clear
+
+	.steam
+		iframe(class="steamframe" src="http://store.steampowered.com/widget/269690/", frameborder="0", width="100%", height="190")
+
+	article#signup
+		.title Subscribe to recive news and updates about Morgondag's games.
+		form#signup(method='post', action='http://send.morgondag.nu/subscribe', acceptCharset='utf-8')
+			#ufo
+			input(type='email', placeholder='type your email', name="email", required, id="signup-mail")
+			input(type='hidden', name='list', defaultValue='XgSgS5WieFsaj5aMSyZoKQ', value='XgSgS5WieFsaj5aMSyZoKQ')
+			input(type='submit', value='Sign Up Now')
+		.clear
+	.clear
+
+	include gallery
+
+	include awards
+
+	include presskit
+	include facebook
+	include press
+
+	include features
+	include chapters
+	include pilot
+
+	include platforms
+
+	include soundtrack
+	.steam
+		iframe(class="steamframe"  src="http://store.steampowered.com/widget/269690/", frameborder="0", width="100%", height="190")
+	include signup
