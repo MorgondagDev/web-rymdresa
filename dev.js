@@ -9,12 +9,11 @@ var favicon = require('koa-favicon')
 var path = require('path')
 
 var app = koa()
-app.use(cors());
 
 var koaBody = require('koa-body')();
 app.env = 'production'
 app.title = 'Morgondag'
-app.use(favicon(__dirname + '/public/favicon.ico'))
+
 
 
 app.use(jade.middleware({

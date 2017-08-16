@@ -9,11 +9,9 @@ import skills from './skills.js'
 import video from './video.js'
 import signup from './signup.js'
 import splashwords from './splashwords';
-import news from './news';
 //import news from './news';
 
 window.addEventListener('DOMContentLoaded', function() {
-	news.request();
 	splashwords.init();
 	quote.init();
 	slideshow.init();
